@@ -1,1 +1,25 @@
+def add(P, Q):
+   return P+Q
+
+def subtract(P, Q):
+  return P - Q
+
+
+# Now we will take inputs from the user
+print("Please select operation.")
+print("a. Add")
+print("b. Subtract")
+
+
+choice = input("Please enter choice (a/b):")
+
+num_1 = int(input("Please enter the first number: "))
+num_2 = int(input("Please enter the second number: "))
+
+if choice == 'a':
+  print(num_1, "+", num_2, "=", add(num_1, num_2))
+elif choice == 'b':
+  print(num_1, "-", num_2, "=", subtract(num_1, num_2))
+else:
+  print("This is an invalid input")
 
